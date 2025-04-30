@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Netflix Clone</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    
+    body, html {
+      font-family: Arial, sans-serif;
+      height: 100%;
+    }
+    
+    .hero {
+      position: relative;
+      height: 100vh;
+      background: url('bg.jpg') no-repeat center center/cover;
+      color: white;
+    }
+    
+    .overlay {
+      position: absolute;
+      top: 0;
+      left: 0;
+      height: 100%;
+      width: 100%;
+      background-color: rgba(0, 0, 0, 0.6);
+    }
+    
+    header {
+      position: relative;
+      padding: 20px 40px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      z-index: 1;
+    }
+    
+    .logo {
+      color: #e50914;
+      font-size: 2rem;
+      font-weight: bold;
+    }
+    
+    .sign-in-btn {
+      color: white;
+      background-color: #e50914;
+      padding: 8px 16px;
+      border-radius: 4px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    
+    .hero-content {
+      position: relative;
+      z-index: 1;
+      text-align: center;
+      padding: 120px 20px 0;
+      max-width: 800px;
+      margin: 0 auto;
+    }
+    
+    .hero-content h1 {
+      font-size: 3rem;
+      margin-bottom: 20px;
+    }
+    
+    .hero-content h2 {
+      font-size: 1.5rem;
+      font-weight: 400;
+      margin-bottom: 20px;
+    }
+    
+    .hero-content p {
+      margin-bottom: 20px;
+      font-size: 1rem;
+    }
+
+    .email-form {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 10px;
+    }
+    .email-form input {
+      padding: 12px;
+      width: 60%;
+      max-width: 400px;
+      border: none;
+      font-size: 1rem;
+    }
+    .email-form button {
+      padding: 12px 20px;
+      background-color: #e50914;
+      color: white;
+      border: none;
+      font-size: 1rem;
+      font-weight: bold;
+      cursor: pointer;
+      
+    }
+  </style>
+
+</head>
+<body>
+  <div class="hero">
+    <div class="overlay"></div>
+    <header>
+      <h1 class="logo">NETFLIX</h1>
+      <a href="#" class="sign-in-btn">Sign In</a>
+    </header>
+    <div class="hero-content">
+      <h1>Unlimited movies, TV shows, and more</h1>
+      <h2>Watch anywhere. Cancel anytime.</h2>
+      <p>Ready to watch? Enter your email to create or restart your membership.</p>
+      <form class="email-form">
+        <input type="email" placeholder="Email address" required />
+        <button type="submit">Get Started &gt;</button>
+      </form>
+    </div>
+  </div>
+</body>
+</html>
